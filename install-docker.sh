@@ -3,7 +3,7 @@
 
 apt update
 
-apt install ca-certificates curl gnupg lsb-release
+apt install -y ca-certificates curl gnupg lsb-release
 
 install -m 0755 -d /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /etc/apt/keyrings/docker.gpg
@@ -18,7 +18,7 @@ echo \
 
 apt update
 
-apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 # Give user docker permissions
 groupadd docker
